@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  /* CNU Official Colors (Approximate based on reference) */
+  --cnu-blue: #004a99;
+  --cnu-light-blue: #e8f0f8;
+  --background: #ffffff;
+  --foreground: #171717;
+  --border-color: #e5e7eb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-cnu-blue: var(--cnu-blue);
+  --color-cnu-light-blue: var(--cnu-light-blue);
+  --color-border-color: var(--border-color);
+  
+  --font-sans: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
